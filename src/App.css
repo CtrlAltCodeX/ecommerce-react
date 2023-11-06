@@ -1,0 +1,166 @@
+.categories {
+  grid-gap: 20px;
+  margin-top: 50px;
+}
+
+.categories p {
+  font-weight: 600;
+  font-size: 16px;
+  margin-top: 10px;
+}
+
+.products {
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+}
+
+.products p {
+  font-size: 14px;
+  width: 130px;
+  margin: auto;
+  margin-top: 10px;
+}
+
+.product-cards {
+  transition: transform 0.3s;
+}
+
+.products .price {
+  font-size: 18px;
+}
+
+.products del {
+  font-size: 10px;
+}
+
+.sizes {
+  grid-gap: 10px;
+}
+
+.sizes span {
+  width: 36px;
+  border: 1px solid #E6E6E6;
+  height: 36px;
+  font-size: 14px;
+}
+
+.products img:hover {
+  filter: blur(5px);
+  transition: opacity 1s;
+  cursor: pointer;
+}
+
+.products .product-image:hover~.action-icons {
+  opacity: 1;
+}
+
+.products .action-icons {
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  grid-gap: 10px;
+  opacity: 0;
+  transition: opacity 1s;
+
+}
+
+.category-products {
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+}
+
+.product-cap {
+  padding: 20px;
+  bottom: 0;
+}
+
+.features {
+  background-color: #F5F4F2;
+  margin-top: 50px;
+  padding: 20px 30px;
+  grid-template-columns: repeat(auto-fit, minmax(249px, 1fr));
+  grid-gap: 20px;
+}
+
+/* Sale Styling */
+.sale {
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  grid-gap: 20px;
+  margin: 50px 0px;
+}
+
+.sale .first {
+  background-color: rgba(204, 206, 167, 1);
+}
+
+.sale .first div,
+.second div {
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, 0%);
+}
+
+.sale .second {
+  background-color: rgba(214, 190, 190, 1);
+}
+
+.sale div {
+  height: 652px;
+}
+
+.sale img{
+  top: 40%;
+  left: 50%;
+  transform: translate(-50%, -100%);
+}
+
+/* Sale Styling */
+
+/* NewsLetter Styling */
+.newsletter {
+  background-color: #AB001E;
+  height: 312px;
+  padding: 50px;
+}
+
+.newsletter span {
+  font-size: 38px;
+}
+
+.newsletter .mail {
+  width: 65%;
+  margin: auto;
+  height: 68px;
+}
+
+.newsletter input {
+  background-color: rgba(255, 255, 255, 0.32);
+}
+
+.newsletter .btn {
+  height: 68px;
+  color: rgba(119, 0, 21, 1);
+}
+
+.newsletter img {
+  top: 0;
+}
+
+/* NewsLetter Styling */
+
+/* Footer Styling */
+footer {
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  grid-gap: 25px;
+}
+
+.copyright-footer {
+  background-color: black;
+  padding: 10px;
+}
+
+/* Footer Styling */
+
+@media screen and (max-width: 1025px) {
+  .categories {
+    flex-wrap: wrap;
+  }
+}
